@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "Women Representative Citizen App",
+    "slug": "women-representative-citizen",
+    "description": "Mobile application for Women Representative Management System - Citizen Services",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#6B46C1",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.advenware.womenrepresentativecitizen",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsLocalNetworking": true
+        }
+      },
+      "entitlements": {
+        "com.apple.developer.applesignin": [
+          "Default"
+        ],
+        "aps-environment": "development"
+      }
+    },
+    "android": {
+      "package": "com.advenware.womenrepresentativecitizen",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#6B46C1"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "READ_PHONE_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundledAssets": [
+        "./assets/favicon.png"
+      ]
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font",
+      "expo-document-picker",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#6B46C1",
+          "sounds": []
+        }
+      ]
+    ],
+    "iosClientEnvironmentVariables": {
+      "EXPO_PUBLIC_API_URL": "http://192.168.100.100:5000/api"
+    },
+    "androidClientEnvironmentVariables": {
+      "EXPO_PUBLIC_API_URL": "http://192.168.100.100:5000/api"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "79d8d6e7-57ea-4f91-898b-a27900502e56"
+      },
+      "apiUrl": "http://192.168.100.100:5000/api"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 3000,
+      "url": "https://u.expo.dev/79d8d6e7-57ea-4f91-898b-a27900502e56"
+    }
+  }
+}
